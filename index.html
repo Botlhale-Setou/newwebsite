@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Botlhale Setou</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="artwork/logo.png" alt="BKS Logo" class="logo">
+				<ul id="sidemenu">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li> 
+					<i class="fa fa-times" onclick="closemenu()"></i>
+				</ul>
+				<i class="fa fa-bars" onclick="openmenu()"></i>
+			</nav>
+			<div class="header-text">
+				<p>Full-Stack Software Engineer</p>
+				<h1>Hi, I'm <span>Botlhale</span><br>Setou from South Africa</h1>
+			</div>
+		</div>
+	</div>
+<!-- ----------ABOUT----------- -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="artwork/africanbg3.jpg" alt="Botlhale Setou">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>Hi there! My name is Botlhale.
+						I’m a 28 year-old full-stack software engineering student (& mentor) from South Africa,
+						specialising in JavaScript and React, building software solutions for small businesses.
+						
+						Though primarily self-taught (C++, Java, Kotlin, etc), I’m currently enrolled in an immersive web development course (Microverse) where I’ve built dozens of projects, using numerous technologies, in collaboration with over 100 developers worldwide.
+						
+						Before transitioning into software, I worked in client care services within the private sector (financial services) for a little over 5 years where I gained an invaluable social intuition and passion for exceeding end-user expectations - which I incorporate into every one of my projects.
+					</p>
+
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+						<p class="tab-links" onclick="opentab('experience')">Experience</p>
+						<p class="tab-links" onclick="opentab('eductaion')">Education</p>
+					</div>
+
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>HTML/CSS</span><br>Building Web/App interfaces</li>
+							<li><span>JavaScript</span><br>Developing Web/App functionality</li>
+							<li><span>React</span><br>Building React applications</li>
+							<li><span>Ruby</span><br>Building Ruby applications</li>
+							<li><span>Rails</span><br>Building Rails applications</li>
+							<li><span>Remote Pair-Programming</span><br>Remote collaboration and teamwork</li>
+							<li><span>Mentoring</span><br>Mentoring 3+ students</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>2022 - Current</span><br>Independant Full-Stack Developer</li>
+							<li><span>2021 - 2022</span><br>Customer Service Representative</li>
+							<li><span>2017 - 2020</span><br>Client Care Advisor</li>
+						</ul>
+					</div>
+
+					<div class="tab-contents" id="eductaion">
+						<ul>
+							<li><span>2022 - 2023</span><br>Full-Stack Developer Certificates from Microverse</li>
+							<li><span>2013 - 2016</span><br>Information Technology Diploma from TUT (incomplete)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- ----------PORTFOLIO---------- -->
+
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Work</h1>
+
+			<div class="work-list">
+				<div class="work">
+					<img src="artwork/portfolio/recipe-app2.PNG" alt="">
+					<div class="layer">
+						<h3>Recipe-App</h3>
+						<p>Recipe-App is a website that displays meals categorized into 3 groups. Each meal has cooking instructions, comments, likes and additional information (incl video).
+
+							Built With: JavaScript, Webpack, Jest, HTML/CSS
+						</p>
+						<div class="icon-holder">
+							<a href="https://recipe-app-0tvs.onrender.com/" target="_blank"><i class="fa fa-external-link"></i></a>
+							<a href="https://github.com/Botlhale-Setou/Recipe-App" target="_blank"><i class="fa fa-book"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="artwork/portfolio/mapfrica1.PNG" alt="">
+					<div class="layer">
+						<h3>Mapfrica</h3>
+						<p>Mapfrica is a React & Redux built website that uses the Rest Countries API to display african countries and related information.
+
+							Built With: React, Redux, Rest Countries API
+						</p>
+						<div class="icon-holder">
+							<a href="http://mapfrica.onrender.com/" target="_blank"><i class="fa fa-external-link"></i></a>
+							<a href="https://github.com/Botlhale-Setou/react-capstone-project" target="_blank"><i class="fa fa-book"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="artwork/portfolio/space-travellers-hub.PNG" alt="">
+					<div class="layer">
+						<h3>Space Travelers' Hub</h3>
+						<p>Space Travelers' Hub is a React & Redux built website that uses the real SpaceX API to display rockets and missions - including the functionality of booking & reserving them.
+
+							Built With: React, Redux, SpaceX API
+						</p>
+						<div class="icon-holder">
+							<a href="https://space-travellers-hub-naaj.onrender.com/" target="_blank"><i class="fa fa-external-link"></i></a>
+							<a href="https://github.com/Botlhale-Setou/space-travelers-hub" target="_blank"><i class="fa fa-book"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="work">
+					<img src="artwork/portfolio/ab.PNG" alt="">
+					<div class="layer">
+						<h3>Awesome Books</h3>
+						<p>My Awesome Books is a database web-app of awesome books created by the user and saves data even while offline.
+
+							Built With: JavaScript, HTML/CSS
+						</p>
+						<div class="icon-holder">
+							<a href="http://awesomebooks.atwebpages.com/" target="_blank"><i class="fa fa-external-link"></i></a>
+							<a href="https://github.com/Botlhale-Setou/awesome-books-app" target="_blank"><i class="fa fa-book"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- <a href="#" class="btn">See More</a> -->
+		</div>
+	</div>
+
+	<!-- ------------CONTACT----------- -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="subtitle">Contact Me</h1>
+					<p><i class="fa fa-paper-plane"></i>botlhale.setou@gmail.com</p>
+					<div class="social-icons">
+						<a href="https://github.com/Botlhale-Setou" target="_blank"><i class="fa fa-github"></i></a>
+						<a href="https://www.linkedin.com/in/botlhalesetou/" target="_blank"><i class="fa fa-linkedin"></i></a>
+						<a href="https://twitter.com/Botlhale_Setou" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.quora.com/profile/Botlhale-Setou" target="_blank"><i class="fa fa-quora"></i></a>
+					</div>
+					<a href="/Botlhale Setou Resume - Full-Stack Web Developer.pdf" class="btn btn2" download>Download CV</a>
+				</div>
+
+				<div class="contact-right">
+					<form name="submit-to-google-sheet">
+						<input type="text" name="Name" placeholder="Your Name" required>
+						<input type="email" name="Email" placeholder="Your Email" required>
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+						<button type="submit" class="btn btn2">Submit</button>
+					</form>
+					<span id="msg"></span>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p>Copyright <i class="fa fa-copyright"></i> Botlhale Setou</p>
+		</div>
+	</div>
+
+
+	<!-- -----------SCRIPTS----------- -->
+	<script>
+		var tablinks = document.getElementsByClassName("tab-links");
+		var tabcontents = document.getElementsByClassName("tab-contents");
+
+		function opentab(tabname) {
+			for(tablink of tablinks){
+				tablink.classList.remove("active-link");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+
+			event.currentTarget.classList.add("active-link");
+			document.getElementById(tabname).classList.add("active-tab");
+		}
+	</script>
+
+	<script>
+		var sidemenu = document.getElementById("sidemenu");
+
+		function openmenu(){
+			sidemenu.style.right = "0";
+		}
+
+		function closemenu(){
+			sidemenu.style.right = "-200px";
+		}
+	</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwR2othw-oXLK1SVVqe_gD6fzDmhGsCGixOJkqFajRUA4zlb_wlKk4qiIXsyr_W1QUcUA/exec'
+  const form = document.forms['submit-to-google-sheet']
+	const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+				msg.innerHTML = "Message sent successfully"
+				setTimeout(function(){
+					msg.innerHTML = ""
+				}, 5000)
+				form.reset()
+			})
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
